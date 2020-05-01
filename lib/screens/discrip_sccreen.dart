@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:readingapp/card/swipe_card.dart';
-import 'package:readingapp/route/scale_route.dart';
+import 'package:readingapp/screens/read_scroll_screen.dart';
 
 
 class newscreen extends StatelessWidget {
@@ -111,7 +110,14 @@ class newscreen extends StatelessWidget {
               ),
               color: Colors.deepOrangeAccent,
               elevation: 8,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => readingscreen(thumb: thumb),
+                  ),
+                );
+              },
             ),
           ),
           Padding(
