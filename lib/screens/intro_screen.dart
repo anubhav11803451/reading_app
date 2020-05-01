@@ -106,7 +106,7 @@ class IntroScreenState extends State<IntroScreen> {
   Widget renderDoneBtn() {
     return Icon(
       Icons.done,
-      color: Colors.black,
+      color: Colors.white,
     );
   }
 
