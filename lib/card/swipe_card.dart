@@ -29,7 +29,7 @@ class swipecard extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.home),
+        child: const Icon(Icons.add_shopping_cart),
         backgroundColor: Colors.deepOrangeAccent,
         elevation: 8,
         tooltip: '',
@@ -46,7 +46,7 @@ class swipecard extends StatelessWidget {
           children: <Widget>[
             IconButton(
               icon: Icon(
-                Icons.home,
+                Icons.search,
                 color: Colors.deepOrangeAccent,
               ),
               onPressed: () {},
@@ -106,7 +106,7 @@ class swipecard extends StatelessWidget {
     Navigator.push(
       context,
       ScaleRoute(
-        page: newscreen(
+        page: discription(
           thumb: thumbs,
         ),
       ),

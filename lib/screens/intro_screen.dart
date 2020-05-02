@@ -82,7 +82,7 @@ class IntroScreenState extends State<IntroScreen> {
 
   void onDonePress() {
     // Back to the first tab
-    _onPoseSelect(
+    _onPageSelect(
       context,
       'Books',
       ['The Little Mermaid','HER','The chaos of longing','This is Me Letting you go',
@@ -200,7 +200,7 @@ class IntroScreenState extends State<IntroScreen> {
       onTabChangeCompleted: this.onTabChangeCompleted,
     );
   }
-  void _onPoseSelect(
+  void _onPageSelect(
       BuildContext context,
       String title,
       List<String> thumb,

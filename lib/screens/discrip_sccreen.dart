@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:readingapp/screens/read_scroll_screen.dart';
+import 'package:readingapp/screens/more_info_screen.dart';
 
 
-class newscreen extends StatelessWidget {
+class discription extends StatelessWidget {
   final thumb;
-  const newscreen({this.thumb});
+  const discription({this.thumb});
   @override
   Widget build(BuildContext context) {
 
@@ -133,7 +134,14 @@ class newscreen extends StatelessWidget {
               ),
               color: Colors.white,
               elevation: 8,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => moreinfo(thumb: thumb,),
+                  ),
+                );
+              },
             ),
           ),
         ],
@@ -141,6 +149,12 @@ class newscreen extends StatelessWidget {
     );
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text(thumb,
+        style: GoogleFonts.handlee(color: Colors.white),),
+        centerTitle: true,
+        backgroundColor: Colors.black,
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.book),
@@ -164,7 +178,7 @@ class newscreen extends StatelessWidget {
             ),
 
             IconButton(
-              icon: Icon(Icons.favorite_border, color: Colors.deepOrangeAccent,),
+              icon: Icon(Icons.cloud_download, color: Colors.deepOrangeAccent,),
               onPressed: () {},
             ),
           ],
