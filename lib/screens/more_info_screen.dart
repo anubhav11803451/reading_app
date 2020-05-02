@@ -25,7 +25,7 @@ class moreinfo extends StatelessWidget {
           Container(
             margin: EdgeInsets.symmetric(horizontal: 100, vertical: 10),
             height: 340,
-            width: 200,
+            width: 220,
             decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: [
