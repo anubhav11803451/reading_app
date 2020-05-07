@@ -62,8 +62,6 @@ class MyApp extends StatelessWidget {
       ),
     );
 
-    Color color = Theme.of(context).primaryColor;
-
     Widget stitleSection = Container(
       padding: const EdgeInsets.only(left: 25, right: 25, top: 10, bottom: 10),
       child: Row(
