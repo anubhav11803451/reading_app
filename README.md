@@ -4,7 +4,8 @@ A new Flutter application.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This is a book readng application UI.<br>
+The design is very beautiful.
 
 ### Here are some ScrenShot :
 
