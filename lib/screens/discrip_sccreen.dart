@@ -4,13 +4,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:readingapp/screens/read_scroll_screen.dart';
 import 'package:readingapp/screens/more_info_screen.dart';
 
-
 class discription extends StatelessWidget {
   final thumb;
   const discription({this.thumb});
   @override
   Widget build(BuildContext context) {
-
     Widget titleSection = Container(
       padding: const EdgeInsets.only(left: 25, right: 25, top: 25, bottom: 8),
       child: Row(
@@ -22,7 +20,7 @@ class discription extends StatelessWidget {
               children: [
                 Container(
                   padding:
-                  const EdgeInsets.only(right: 10, top: 10, bottom: 10),
+                      const EdgeInsets.only(right: 10, top: 10, bottom: 10),
                   child: Text(
                     thumb,
                     style: GoogleFonts.baloo(
@@ -48,7 +46,7 @@ class discription extends StatelessWidget {
               Container(
                 padding: EdgeInsets.all(2),
                 child: Text(
-                  'Category',
+                  'Rating',
                   style: GoogleFonts.handlee(
                     color: Colors.white,
                     fontStyle: FontStyle.italic,
@@ -76,11 +74,11 @@ class discription extends StatelessWidget {
               children: [
                 Text(
                   'Quisque consequat at neque in eleifend. Mauris tincidunt augue quis sapien sagittis,'
-                      'non venenatis dui commodo. Donec fringilla mi ut mi tincidunt vestibulum.'
-                      'Morbi viverra erat et velit elementum, ac scelerisque sem rhoncus.'
-                      'Praesent scelerisque est vitae consectetur vestibulum. Nam tempus ut lorem ut consequat.'
-                      '|Nam at sollicitudin augue, eu aliquet nibh. Sed tempus quis velit facilisis rutrum. '
-                      'Fusce gravida hendrerit mi, eu vehicula libero pretium vitae.',
+                  'non venenatis dui commodo. Donec fringilla mi ut mi tincidunt vestibulum.'
+                  'Morbi viverra erat et velit elementum, ac scelerisque sem rhoncus.'
+                  'Praesent scelerisque est vitae consectetur vestibulum. Nam tempus ut lorem ut consequat.'
+                  '|Nam at sollicitudin augue, eu aliquet nibh. Sed tempus quis velit facilisis rutrum. '
+                  'Fusce gravida hendrerit mi, eu vehicula libero pretium vitae.',
                   style: GoogleFonts.poiretOne(
                     fontSize: 13,
                     color: Colors.white,
@@ -138,7 +136,9 @@ class discription extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => moreinfo(thumb: thumb,),
+                    builder: (context) => moreinfo(
+                      thumb: thumb,
+                    ),
                   ),
                 );
               },
@@ -150,8 +150,10 @@ class discription extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(thumb,
-        style: GoogleFonts.handlee(color: Colors.white),),
+        title: Text(
+          thumb,
+          style: GoogleFonts.handlee(color: Colors.white),
+        ),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
@@ -173,12 +175,17 @@ class discription extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             IconButton(
-              icon: Icon(Icons.home,color: Colors.deepOrangeAccent,),
+              icon: Icon(
+                Icons.home,
+                color: Colors.deepOrangeAccent,
+              ),
               onPressed: () {},
             ),
-
             IconButton(
-              icon: Icon(Icons.cloud_download, color: Colors.deepOrangeAccent,),
+              icon: Icon(
+                Icons.cloud_download,
+                color: Colors.deepOrangeAccent,
+              ),
               onPressed: () {},
             ),
           ],
@@ -199,8 +206,5 @@ class discription extends StatelessWidget {
       ),
       backgroundColor: Colors.black,
     );
-
-
   }
-
 }
